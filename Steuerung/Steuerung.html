@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <link rel="stylesheet" href="../Basic.css">
+	  <link rel="stylesheet" href="Steuerung.css">
+		<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css">
+		<script src="../jquery-2.1.4.min.js"></script>
+		<script rel="stylesheet" href="../jquery.mobile-1.4.5.min.js"></script>
+		<title>Steuerung</title>
+	</head>
+	<body>
+		<header>Steuerung</header>
+
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+	  	<a href="../Home/Home.html">Home</a>
+			<a href="#">Steuerung</a>
+			<a href="../Messdaten/Messdaten.html">Messdaten</a>
+		</div>
+
+		<span style="cursor:pointer" onclick="openNav()"><img src="../menu_icon.png" alt="menu" style="width:50px;height:50px;"></span>
+
+		<button id="forward" class="button">Forward</button>
+		<button id="backward" class="button">Backward</button>
+		<button id="right" class="button">Right</button>
+		<button id="left" class="button">Left</button>
+		<button id="stop" class="button">Stop</button>
+
+		<script>
+
+		$(document).ready(function(){
+			$("#forward").click(function(){
+				$.ajax ({
+					type: "POST",
+					url: "Steuerung.php",
+					data: ButtonEingabe: "forward"
+				});
+			});
+			$("#backward").click(function(){
+				$.ajax ({
+					type: "POST",
+					url: "Steuerung.php",
+					data: "ButtonEingabe=backward"
+				});
+			});
+			$("#right").click(function(){
+				$.ajax ({
+					type: "POST",
+					url: "Steuerung.php",
+					data: "ButtonEingabe=right"
+				});
+			});
+			$("#left").click(function(){
+				$.ajax ({
+					type: "POST",
+					url: "Steuerung.php",
+					data: "ButtonEingabe=left"
+				});
+			});
+
+		});
+
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+		<footer>Copyright Andreas Mast</footer>
+	 </body>
+</html>
