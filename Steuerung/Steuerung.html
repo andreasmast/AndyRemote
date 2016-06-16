@@ -31,12 +31,11 @@
 		$(document).ready(function(){
 			$("#forward").click(function(){
 				$.ajax ({
-					type: "POST",
+					type: "GET",
 					url: "Steuerung.php",
-					data: ButtonEingabe: "forward"
 				});
 			});
-			$("#backward").click(function(){
+			/*$("#backward").click(function(){
 				$.ajax ({
 					type: "POST",
 					url: "Steuerung.php",
@@ -56,7 +55,7 @@
 					url: "Steuerung.php",
 					data: "ButtonEingabe=left"
 				});
-			});
+			}); */
 
 		});
 
