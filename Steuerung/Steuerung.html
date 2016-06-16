@@ -35,7 +35,6 @@
 					url: "Steuerung_forward.php",
 					});
 				});
-			});
 			$("#backward").click(function(){
 				$.ajax ({
 					type: "GET",
@@ -44,14 +43,20 @@
 			});
 			$("#right").click(function(){
 				$.ajax ({
-					type: "POST",
+					type: "GET",
 					url: "Steuerung_right.php",
 				});
 			});
 			$("#left").click(function(){
 				$.ajax ({
-					type: "POST",
+					type: "GET",
 					url: "Steuerung_left.php",
+				});
+			});
+			$("#stop").click(function(){
+			$.ajax ({
+				type: "GET",
+				url: "Steuerung_stop.php",
 				});
 			});
 		});

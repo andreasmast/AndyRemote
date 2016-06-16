@@ -39,6 +39,4 @@
   set_gpio_enable();
   reset_all_motor_pins();
 
-  }
-
  ?>
