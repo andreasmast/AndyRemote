@@ -23,7 +23,7 @@
   }
 
   function write_pin($pin, $value){
-    shell_exec("gpio -g write" . $pin . $value);
+    shell_exec("gpio -g write " . $pin . " " . $value);
   }
 
   function reset_all_motor_pins(){

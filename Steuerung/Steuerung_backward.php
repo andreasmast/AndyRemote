@@ -23,7 +23,7 @@
   }
 
   function write_pin($pin, $value){
-    shell_exec("gpio -g write" . $pin . $value);
+    shell_exec("gpio -g write " . $pin . " " . $value);
   }
 
   function reset_all_motor_pins(){
@@ -37,41 +37,8 @@
 
   set_gpio_export_out();
   set_gpio_enable();
-
-  $buttonEingabe = $_POST['ButtonEingabe'];
-
-  switch ($buttonEingabe) {
-    case 'forward':
-      reset_all_motor_pins();
-      write_pin(Pin_Motor1_forw, 1);
-      write_pin(Pin_Motor2_forw, 1);
-      //sleep(1);
-      break;
-    case 'backward':
-      reset_all_motor_pins();
-      write_pin(Pin_Motor1_backw, 1);
-      write_pin(Pin_Motor2_backw, 1);
-      //sleep(1);
-      break;
-    case 'right':
-      reset_all_motor_pins();
-      write_pin(Pin_Motor1_forw, 1);
-      write_pin(Pin_Motor2_backw, 1);
-      //sleep(1);
-      break;
-    case 'left':
-      reset_all_motor_pins();
-      write_pin(Pin_Motor1_backw, 1);
-      write_pin(Pin_Motor2_forw, 1);
-      //sleep(1);
-      break;
-    case 'stop':
-      reset_all_motor_pins();
-      break;
-
-    default:
-      echo "Switch default! -> Error";
-      break;
-  }
+  reset_all_motor_pins();
+  write_pin(Pin_Motor1_backw, 1);
+  write_pin(Pin_Motor2_backw, 1);
 
  ?>

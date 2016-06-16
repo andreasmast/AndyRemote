@@ -33,34 +33,27 @@
 				$.ajax ({
 					type: "GET",
 					url: "Steuerung_forward.php",
-					dataType: "json",
-					success: function (returnData) {}
 					});
-					return false;
 				});
 			});
-			/*$("#backward").click(function(){    comment
+			$("#backward").click(function(){
 				$.ajax ({
-					type: "POST",
-					url: "Steuerung.php",
-					data: "ButtonEingabe=backward"
+					type: "GET",
+					url: "Steuerung_backward.php",
 				});
 			});
 			$("#right").click(function(){
 				$.ajax ({
 					type: "POST",
-					url: "Steuerung.php",
-					data: "ButtonEingabe=right"
+					url: "Steuerung_right.php",
 				});
 			});
 			$("#left").click(function(){
 				$.ajax ({
 					type: "POST",
-					url: "Steuerung.php",
-					data: "ButtonEingabe=left"
+					url: "Steuerung_left.php",
 				});
-			}); */
-
+			});
 		});
 
 			function openNav() {
