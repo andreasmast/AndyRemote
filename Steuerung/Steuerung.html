@@ -32,7 +32,11 @@
 			$("#forward").click(function(){
 				$.ajax ({
 					type: "GET",
-					url: "Steuerung.php",
+					url: "Steuerung_forward.php",
+					dataType: "json",
+					success: function (returnData) {}
+					});
+					return false;
 				});
 			});
 			/*$("#backward").click(function(){    comment

@@ -1,6 +1,4 @@
 <?php
-  echo "Funktioniert!";
-
   define ('Pin_Motor1_forw',9);
   define ('Pin_Motor1_backw',10);
   define ('Pin_Motor2_forw',23);
@@ -9,7 +7,7 @@
   define ('Pin_Motor2_enable',25);
 
   function set_gpio_export_out(){         //direction "out"
-    	shell_exec("gpio export " . Pin_Motor1_forw . " out");
+      shell_exec("gpio export " . Pin_Motor1_forw . " out");
     	shell_exec("gpio export 10 out");
     	shell_exec("gpio export 11 out"); //Enable
     	shell_exec("gpio export 23 out");
@@ -35,6 +33,7 @@
 
   //Programmstart
 
+  echo "Funktioniert!";
   set_gpio_export_out();
   set_gpio_enable();
   reset_all_motor_pins();
