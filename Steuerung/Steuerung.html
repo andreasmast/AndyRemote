@@ -4,8 +4,9 @@
 	  <link rel="stylesheet" href="../Basic.css">
 	  <link rel="stylesheet" href="Steuerung.css">
 		<!--<link rel="stylesheet" href="../jquery.mobile-1.4.5.min.css"> -->
-		<script src="../jquery-2.1.4.min.js"></script>
-		<script src="../jquery.mobile-1.4.5.min.js"></script>
+		<!--<script src="../jquery-2.1.4.min.js"></script>
+		<script src="../jquery.mobile-1.4.5.min.js"></script>-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<title>Steuerung</title>
 	</head>
 	<body>
@@ -26,11 +27,11 @@
 		<button id="left" class="button">Left</button>
 		<button id="stop" class="button">Stop</button>
 
-		<p id=123>
+		<!-- <p id=123>
 			Hallo1
-		</p>
+		</p> -->
 		<script>
-		document.getElementById("123").innerHTML = "Hallo2";
+		//document.getElementById("123").innerHTML = "Hallo2";
 		$(document).ready(function(){
 			$("#forward").click(function(){
 				$.ajax ({
@@ -69,7 +70,7 @@
 			}
 
 			function closeNav() {
-			    document.getElementById("mySidenav").style.width = "0";
+			    document.getElementById("mySidenav").style.width = "50px";
 			}
 		</script>
 		<footer>Copyright Andreas Mast</footer>
