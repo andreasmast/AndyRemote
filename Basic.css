@@ -5,6 +5,13 @@ header{
     padding:5px;
 }
 
+ /* Sidenav */
+
+ #menuIcon {
+    width:200px;
+    height:200px;
+ }
+
 nav{
     line-height:30px;
     background-color:black;
@@ -12,20 +19,6 @@ nav{
     width:auto;
     float:left;
     padding:5px;
-}
-
-footer{
-    background-color:black;
-    color:white;
-    font-size: 12px;
-    clear:both;
-    text-align:center;
-    padding:5px;
-    left:0;
-    bottom: auto;
-    position: relative;
-    width:100%;
-    height:25px;
 }
 
 nav a{
@@ -41,14 +34,13 @@ nav a:hover {
 
 body {
     font-family: "Lato", sans-serif;
-    position: relative;
 }
 
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #111;
@@ -60,7 +52,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
     color: #818181;
     display: block;
     transition: 0.3s
@@ -82,3 +74,5 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+ /* end sidenav */

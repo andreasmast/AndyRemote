@@ -6,30 +6,61 @@
 		<title>Andy Remote</title>
 	</head>
 	<body>
-		<header>Home</header>
+		<!--<header>Home</header> -->
+
+    <div style="background-image:url('../Bilder/img7.png');text-align:center;opacity:0.9;">
+
+      <span style="font-size:36px;"><b>HOME</b></span>
+
+    </div>
 
 		<!-- Seitenmenü -->
 
 		<div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+			<br>
+			<br>
 			<a href="#"><b>Home</b></a>
+			<br>
+			<br>
 			<a href="../Steuerung/Steuerung.html">Steuerung</a>
+			<br>
+			<br>
 	  	<a href="../Messdaten/Messdaten.html">Messdaten</a>
 		</div>
 
-		<span style="cursor:pointer; float:left;position:relative;z-index:10;" onclick="openNav()"><img src="../menu_icon.png" alt="menu" style="width:50px;height:50px;"></span>
+
+		<span id="openNav" onclick="openNav()">
+      <img id="menuIcon" src="../Bilder/img12.ico" alt="menu">
+    </span>
 
 		<!-- parallax -->
 
 	<div class="parallax"></div>
 
-	<div style="height:100px;background-color:red;opacity:0.6;font-size:36px">
+  	<div id="parallax2">
+  		<div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align:justify;">
+        <h2 style="text-align:center;">Andy Remote</h2>
+        <p>
+          Andy Remote is a university project within the lecture Mobile Systems, where students had to build up
+          a remoteproject. The basic idea was that you can control something with your smartphone via a Raspberry Pi.
+          I decide that a want to build a car which i can steer by my smartphone.
+          Therefore we needed a Raspberry Pi on which a web-server runs.
+          <br>
+          <br>
+          <p style="font-size:30px;text-align:center;">All in all a crazy project like deadpool!</p>
+        </p>
+      </div>
+  	</div>
+    <div id="parallax3">
+      <h2 style="text-align:center;">Features</h2>
+      <p>
 
-		Scroll Up and Down this page to see the parallax scrolling effect.
-		This div is just here to enable scrolling.
-		Tip: Try to remove the background-attachment property to remove the scrolling effect.
+      </p>
+    </div>
+    <div id="parallax4">
 
-	</div>
+    </div>
 
 	<div class="parallax"></div>
 
