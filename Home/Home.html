@@ -8,26 +8,34 @@
 	<body>
 		<header>Home</header>
 
+		<!-- Seitenmenü -->
+
 		<div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-			<a href="#">Home</a>
+			<a href="#"><b>Home</b></a>
 			<a href="../Steuerung/Steuerung.html">Steuerung</a>
 	  	<a href="../Messdaten/Messdaten.html">Messdaten</a>
 		</div>
 
-		<span style="cursor:pointer" onclick="openNav()"><img src="../menu_icon.png" alt="menu" style="width:50px;height:50px;"></span>
+		<span style="cursor:pointer; float:left;position:relative;z-index:10;" onclick="openNav()"><img src="../menu_icon.png" alt="menu" style="width:50px;height:50px;"></span>
 
 		<!-- parallax -->
 
 	<div class="parallax"></div>
-		<div style="height:1000px;background-color:red;opacity:0.6;font-size:36px">
+
+	<div style="height:100px;background-color:red;opacity:0.6;font-size:36px">
+
 		Scroll Up and Down this page to see the parallax scrolling effect.
 		This div is just here to enable scrolling.
 		Tip: Try to remove the background-attachment property to remove the scrolling effect.
+
 	</div>
 
 	<div class="parallax"></div>
 
+<!-- End parallax -->
+
+		<footer>Copyright Andreas Mast</footer>
 		<script>
 
 			function openNav() {
@@ -38,5 +46,5 @@
 			    document.getElementById("mySidenav").style.width = "0";
 			}
 		</script>
-		<footer>Copyright Andreas Mast</footer>
+
 </html>
