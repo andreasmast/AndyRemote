@@ -1,10 +1,10 @@
 <?php
   echo "Funktioniert!";
 
-  define ('Pin_Motor1_forw',9);
-  define ('Pin_Motor1_backw',10);
-  define ('Pin_Motor2_forw',23);
-  define ('Pin_Motor2_backw',24);
+  define ('Pin_Motor1_forw',10);
+  define ('Pin_Motor1_backw',9);
+  define ('Pin_Motor2_forw',24);
+  define ('Pin_Motor2_backw',23);
   define ('Pin_Motor1_enable',11);
   define ('Pin_Motor2_enable',25);
 
